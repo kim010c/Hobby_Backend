@@ -1,6 +1,7 @@
 import { prisma } from "../../../generated/prisma-client";
+
 export default {
   Query: {
-    test: () => "hi"
+    allUsers: () => prisma.users()
   }
 };
